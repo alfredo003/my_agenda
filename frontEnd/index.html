@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyAgenda</title>
+  <script src="./assets/js/vendor/axios.min.js"></script>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/modal.css">
+</head>
+<body>
+  <div class="area">
+    <div class="header">
+   <h1>My Agenda📑</h1>
+   <p>Safe your tasks</p>
+    </div>
+<div class="open-modal">
+  <button class="btn open-moda">+&nbsp;&nbsp;Create tasks</button>
+</div>
+<div class="message">---</div>
+  
+    <dialog>
+      <span>x</span>
+      <div class="form">
+        <div class="message">---</div>
+      <input type="text" placeholder="Tasks / Hour" class="tasks" required>
+      <button class="btn btn-primary btn-send">Add Name</button>
+      </div>
+    </dialog>
+    
+    <div class="list">
+        
+      <ul>
+       <li>
+          <span class="hour"></span>
+          <span class="name"></span>
+          <span class="delete">x</span>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+  <script src="./assets/js/message.js"></script>
+  <script src="./assets/js/model.js"></script>
+  <script src="./assets/js/controller.js"></script> 
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

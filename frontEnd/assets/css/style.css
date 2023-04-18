@@ -1,0 +1,80 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+:root{
+  font-size: 100%;
+  --primary-color:#035fb4;
+  --default-color:rgb(24, 24, 24);
+}
+body{
+  color: var(--default-color);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+  padding: 40px;
+  text-align: center;
+  line-height: 30px;
+}
+h1{
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+p{
+  font-size: 1rem;
+  font-weight:bold;
+  text-transform: uppercase;
+}
+
+.btn{
+ padding: 1rem;
+ border:none;
+ color: #fff;
+ font-weight: bold;
+ background-color: var(--primary-color);
+ width: 50%;
+}
+.open-modal{
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.list ul{
+  width: 100%;
+  list-style: none;
+ 
+}
+
+.list ul li{
+ display: none;
+  justify-content: space-between;
+box-shadow:0 0 0.4em rgb(0 0 0 / .3);
+border-bottom: 1px solid #ccc;
+  padding: 14px; 
+  margin-bottom: 10px;
+}
+.list ul li .hour{ 
+  color:rgb(202, 202, 202);
+}
+.list ul li span.delete{
+  cursor: pointer;
+  font-weight: bold;
+  color:red;
+}
+.list ul li span.name{
+  color:var(--primary-color);
+}
+.message{
+  display: none;
+  color: #fff;
+  padding:10px;
+  margin: 5px;
+  font-weight: bold;
+}
